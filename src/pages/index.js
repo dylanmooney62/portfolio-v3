@@ -1,22 +1,22 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import "twin.macro";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout";
+import Hero from "../components/Hero";
+import AboutPanel from "../components/AboutPanel";
+import ProjectsSection from "../components/ProjectsSection";
+import Container from "../components/common/Container";
+import ContactSection from "../components/ContactSection";
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <Hero />
+    <Container tw="relative z-10 -mt-12">
+      <AboutPanel />
+    </Container>
+    <ProjectsSection />
+    <ContactSection />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
