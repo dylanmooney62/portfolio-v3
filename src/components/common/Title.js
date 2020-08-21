@@ -2,8 +2,8 @@ import React from "react";
 import propTypes from "prop-types";
 import tw, { styled } from "twin.macro";
 
-const Title = ({ variant, children, ...props }) => {
-  const Heading = variant;
+const Title = ({ variant, as, children, ...props }) => {
+  const Heading = as || variant;
 
   return (
     <Heading variant={variant} {...props}>
