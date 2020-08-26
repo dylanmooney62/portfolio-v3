@@ -5,14 +5,20 @@ import "twin.macro";
 import Layout from "../components/Layout";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
-
-import mockup from "../assets/images/perspective-mockup.png";
 import Container from "../components/common/Container";
+import ProjectGallery from "../components/ProjectGallery";
 
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
+      gallery {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   }
 `;
@@ -22,17 +28,13 @@ const Project = ({ data }) => {
 
   return (
     <Layout>
-      <Nav inverted />
-      <Header title={project.title} caption="Project" />
-      <Container>
-        <div tw="mb-32">
-          <img
-            tw="w-full h-64 block shadow-lg"
-            src={mockup}
-            alt="Mock up project title"
-          />
-        </div>
-      </Container>
+      <div tw="bg-gray-100 h-screen">
+        <Nav inverted />
+        <Header title={project.title} caption="Project" />
+        <Container>
+          <ProjectGallery images={project.gallery} />
+        </Container>
+      </div>
     </Layout>
   );
 };

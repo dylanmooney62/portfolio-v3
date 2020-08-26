@@ -4,6 +4,11 @@
     "slug": "national-museum-of-scotland",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/mockup.jpg",
+      "./images/mockup.jpg",
+      "./images/mockup.jpg"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   },
   {
@@ -11,6 +16,11 @@
     "slug": "connecting-scotland",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   },
   {
@@ -18,6 +28,11 @@
     "slug": "silver-birch-scotland",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   },
   {
@@ -25,6 +40,11 @@
     "slug": "johnny-knoxville",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   },
   {
@@ -32,6 +52,11 @@
     "slug": "tepid-waters",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   },
   {
@@ -39,6 +64,11 @@
     "slug": "enjoyable",
     "thumbnail": "./images/nms-thumbnail.png",
     "logo": "./images/nms-logo.svg",
+    "gallery": [
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png",
+      "./images/perspective-mockup.png"
+    ],
     "tags": ["UI/UX", "Front-end", "Back-end"]
   }
 ]

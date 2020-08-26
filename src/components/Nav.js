@@ -69,7 +69,7 @@ const StyledNav = styled.nav`
     props.inverted &&
     css`
       li a {
-        ${tw`text-gray-600`}
+        ${tw`text-gray-700`}
       }
     `}
 `;
