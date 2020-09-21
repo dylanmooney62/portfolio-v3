@@ -28,7 +28,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      display: ["Poppins", "sans-serif"],
+      display: ["Ubuntu", "sans-serif"],
       body: ["Lato", "sans-serif"],
     },
   },

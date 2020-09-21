@@ -24,11 +24,10 @@ const AboutPanel = () => {
       </div>
       <div tw="w-10/12 pt-12 pb-16 mx-auto lg:w-8/12 lg:py-20 lg:px-8 lg:flex-shrink-0 lg:m-0 lg:ml-5 xl:py-24">
         <p tw="font-body font-medium leading-loose text-sm text-gray-900 italic leading-9 md:text-base">
-          "Hi, I'm Dylan Mooney. I'm a full-time web developer with a passion
-          for creating cutting edge user-experiences with an immense amount of
-          detail. When I build websites for my clients, I take the time to
+          Hi, I'm Dylan. I'm a full-time web developer with a passion for
+          creating seamless, compelling user experiences. I take great care to
           understand my clients' needs and work closely with them to create a
-          solution that works for both them and their target audience."
+          solution that works for them and their target audience.
         </p>
       </div>
     </StyledAboutPanel>

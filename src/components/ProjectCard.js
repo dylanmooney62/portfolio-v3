@@ -6,11 +6,11 @@ import Img from "gatsby-image";
 
 import Paragraph from "./common/Paragraph";
 
-const ProjectCard = ({ title, slug, thumbnail, logo, tags }) => {
+const ProjectCard = ({ title, slug, thumbnail, logo, services }) => {
   return (
     <StyledProjectCard
       tw="block focus:shadow-outline focus:outline-none rounded-lg"
-      to={`projects/${slug}`}
+      to={`/projects/${slug}`}
     >
       <h3 tw="hidden">{title}</h3>
       <div tw="relative h-64 bg-purple-500 mb-8 rounded-lg overflow-hidden shadow-lg">
@@ -23,7 +23,7 @@ const ProjectCard = ({ title, slug, thumbnail, logo, tags }) => {
           <img tw="relative z-10" src={logo.publicURL} alt={`${title} logo`} />
         </div>
       </div>
-      <Paragraph tw="text-center font-medium">{tags.join(", ")}</Paragraph>
+      <Paragraph tw="text-center font-medium">{services.join(", ")}</Paragraph>
     </StyledProjectCard>
   );
 };
@@ -32,7 +32,7 @@ ProjectCard.propTypes = {
   slug: PropTypes.string.isRequired,
   thumbnail: PropTypes.object.isRequired,
   logo: PropTypes.object.isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  services: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default ProjectCard;

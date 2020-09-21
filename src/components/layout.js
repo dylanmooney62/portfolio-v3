@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <StyledLayout>
       {children}
-      {/* <Footer /> */}
+      <Footer />
     </StyledLayout>
   );
 };

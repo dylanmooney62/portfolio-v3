@@ -15,7 +15,7 @@ const ProjectsSection = () => {
           node {
             slug
             title
-            tags
+            services
             thumbnail {
               childImageSharp {
                 fluid {

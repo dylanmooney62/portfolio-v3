@@ -47,21 +47,25 @@ Carousel.propTypes = {
 export default Carousel;
 
 const StyledCarousel = styled.div`
-  ${tw`overflow-hidden relative w-full rounded-lg focus:outline-none focus:shadow-outline mb-12`}
+  ${tw`overflow-hidden relative w-full rounded-lg focus:outline-none focus:shadow-outline`}
+
+  & > div > div:active {
+    cursor: grab;
+  }
 
   .flickity-page-dots {
     ${tw`flex items-center justify-center h-4`}
   }
 
   .dot {
-    ${tw`w-2 h-2 rounded-full bg-blue-500 hover:cursor-pointer`}
+    ${tw`w-2 h-2 rounded-full bg-blue-800 hover:cursor-pointer`}
 
     &:not(:last-child) {
       ${tw`mr-4 lg:mr-6`}
     }
 
     &::after {
-      ${tw`absolute w-3 h-3 rounded-full border-2 border-solid border-blue-500`}
+      ${tw`absolute w-3 h-3 rounded-full border-2 border-solid border-blue-800`}
       content: "";
       transform: translate(-50%, -50%) scale(0);
       opacity: 0;

@@ -26,7 +26,7 @@ const StyledTitle = styled(Title)`
     props.variant === "h1" &&
     tw`\
     font-bold text-4xl text-white tracking-tight leading-tight
-    md:text-5xl leading-tight lg:text-6xl
+    md:text-5xl leading-tight xl:text-6xl
     `}
 
   ${(props) =>
@@ -34,6 +34,13 @@ const StyledTitle = styled(Title)`
     tw`\
     text-3xl font-semibold
     md:text-4xl
+  `}
+
+${(props) =>
+  props.variant === "h3" &&
+  tw`\
+    text-2xl font-semibold
+    md:text-3xl
   `}
 `;
 

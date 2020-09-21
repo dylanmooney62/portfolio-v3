@@ -4,20 +4,23 @@ import tw, { styled } from "twin.macro";
 import Img from "gatsby-image";
 
 import Carousel from "./common/Carousel";
+import Container from "./common/Container";
 
 const ProjectGallery = ({ images }) => {
   return (
-    <Carousel>
-      {images.map((img, index) => (
-        <Cell key={index}>
-          <Img
-            fluid={img.childImageSharp.fluid}
-            alt=""
-            tw="rounded-lg shadow-lg block h-full w-full object-fill object-center"
-          />
-        </Cell>
-      ))}
-    </Carousel>
+    <Container as="section">
+      <Carousel>
+        {images.map((img, index) => (
+          <Cell key={index}>
+            <Img
+              fluid={img.childImageSharp.fluid}
+              alt=""
+              tw="rounded-lg shadow-lg block h-full w-full object-fill object-center"
+            />
+          </Cell>
+        ))}
+      </Carousel>
+    </Container>
   );
 };
 
