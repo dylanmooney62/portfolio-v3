@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 ];
 
 const NavItem = ({ text, href }) => (
-  <li tw="text-white font-semibold mr-20 xl:mr-24 last:mr-0 hover:text-gray-400 transition duration-300 ease-in-out">
+  <li tw="text-white font-semibold text-sm mr-10 sm:mr-12 md:text-base md:mr-20 xl:mr-24 last:mr-0 hover:text-gray-400 transition duration-300 ease-in-out">
     <Link tw="p-1 focus:shadow-outline focus:outline-none" to={href}>
       {text}
     </Link>
@@ -41,7 +41,7 @@ const Nav = ({ inverted }) => {
             <span tw="hidden">Home</span>
           </Link>
           <div>
-            <button tw="focus:shadow-outline lg:hidden">
+            <button tw="focus:shadow-outline hidden">
               {!inverted ? (
                 <Menu tw="w-6 text-white fill-current" aria-hidden="true" />
               ) : (
@@ -49,7 +49,7 @@ const Nav = ({ inverted }) => {
               )}
               <span tw="hidden">Open Navigation</span>
             </button>
-            <ul tw="hidden lg:flex">
+            <ul tw="flex" style={{ transform: "translateY(4px)" }}>
               {NAV_ITEMS.map(({ text, href }) => (
                 <NavItem text={text} href={href} key={href} />
               ))}
