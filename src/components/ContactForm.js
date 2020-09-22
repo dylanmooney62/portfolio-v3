@@ -18,9 +18,11 @@ const ContactForm = () => {
     }
 
     if (email === "") {
+      return;
     }
 
     if (description === "") {
+      return;
     }
 
     e.submit();
