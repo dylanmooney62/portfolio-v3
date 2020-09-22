@@ -8,7 +8,7 @@ import Button from "./common/Button";
 const ProjectLinks = ({ site, github, ...props }) => {
   return (
     <div {...props}>
-      <Title variant="h3" as="h3" tw="mb-4 xl:text-2xl">
+      <Title variant="h3" as="h2" tw="mb-4 xl:text-2xl">
         View
       </Title>
       <div tw="flex">

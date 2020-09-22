@@ -7,7 +7,7 @@ import Title from "./common/Title";
 const ProjectTechnology = ({ technologies, ...props }) => {
   return (
     <div {...props}>
-      <Title variant="h3" as="h3" tw="mb-4 xl:text-2xl xl:mb-4">
+      <Title variant="h3" as="h2" tw="mb-4 xl:text-2xl xl:mb-4">
         Tools & Technologies
       </Title>
       <ul tw="flex flex-wrap -mt-4 xl:max-w-xs">

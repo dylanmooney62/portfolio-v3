@@ -13,7 +13,7 @@ const Button = styled.a`
 
   /* Secondary Styles */
   ${(props) =>
-    props.variant === "secondary" && tw`bg-green-600 hover:bg-green-700`}
+    props.variant === "secondary" && tw`bg-green-700 hover:bg-green-800`}
 
 
   /* Small Variant */

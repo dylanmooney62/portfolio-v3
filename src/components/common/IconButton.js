@@ -9,7 +9,9 @@ const IconButton = ({ href, icon, label, brandColor }) => {
       tw="block w-12 h-12 rounded-lg border border-gray-400 flex items-center justify-center focus:shadow-outline focus:outline-none"
       href={href}
       target="_blank"
+      rel="noopener"
       brandColor={brandColor}
+      aria-label={label}
     >
       <span tw="hidden">{label}</span>
       <FontAwesomeIcon

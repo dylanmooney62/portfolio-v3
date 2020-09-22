@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import "twin.macro";
 
 import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Container from "../components/common/Container";
@@ -65,6 +66,7 @@ const Project = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={`${project.title} | Dylan Mooney - Web Solutions`} />
       <div tw="bg-gray-100">
         <Nav inverted />
         <Header title={project.title} caption="Project" />

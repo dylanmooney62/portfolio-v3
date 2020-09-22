@@ -26,7 +26,11 @@ const Nav = ({ inverted }) => {
     <StyledNav tw="py-8 absolute w-full font-body" inverted={inverted}>
       <Container>
         <div tw="flex items-center justify-between">
-          <Link tw="focus:shadow-outline focus:outline-none" to="/">
+          <Link
+            tw="focus:shadow-outline focus:outline-none"
+            to="/"
+            aria-label="home"
+          >
             {!inverted ? (
               <Logo
                 tw="w-32 lg:w-40 text-white fill-current"

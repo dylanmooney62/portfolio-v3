@@ -8,7 +8,7 @@ import DefinitionList from "./common/DefinitionList";
 const ProjectClient = ({ client, services, url, ...props }) => {
   return (
     <div {...props}>
-      <Title variant="h3" as="h3" tw="mb-4 xl:text-2xl xl:mb-2">
+      <Title variant="h3" as="h2" tw="mb-4 xl:text-2xl xl:mb-2">
         Client
       </Title>
       <DefinitionList>

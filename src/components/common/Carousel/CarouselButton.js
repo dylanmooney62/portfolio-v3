@@ -11,6 +11,7 @@ const CarouselButton = ({ variant, onClick, ...props }) => {
       onClick={onClick}
       {...props}
       tw="rounded-lg shadow-md bg-white z-10 h-10 w-10 flex items-center justify-center focus:outline-none focus:shadow-outline lg:h-12 lg:w-12"
+      aria-label={variant === "previous" ? "Previous slide" : "Next slide"}
     >
       <FontAwesomeIcon
         icon={variant === "previous" ? faArrowLeft : faArrowRight}
