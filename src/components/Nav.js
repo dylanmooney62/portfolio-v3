@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import tw, { styled, css } from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 import Container from "./common/Container";
 
@@ -68,11 +68,7 @@ const Nav = ({ inverted }) => {
 export default Nav;
 
 const StyledNav = styled.nav`
-  ${(props) =>
-    props.inverted &&
-    css`
-      li a {
-        ${tw`text-gray-700`}
-      }
-    `}
+  li a {
+    ${({ inverted }) => inverted && tw`text-gray-700`}
+  }
 `;
