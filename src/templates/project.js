@@ -12,8 +12,6 @@ import ProjectClient from "../components/ProjectClient";
 import ProjectTechnology from "../components/ProjectTechnology";
 import ProjectLinks from "../components/ProjectLinks";
 
-import Divider from "../assets/svg/dashed-border-vertical.svg";
-
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
