@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import tw, { styled } from "twin.macro";
 
 import Footer from "./Footer";
+import Favicon from "./common/Favicon";
 
 const Layout = ({ children }) => {
   return (
     <StyledLayout>
+      <Favicon />
       {children}
       <Footer />
     </StyledLayout>

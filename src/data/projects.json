@@ -7,7 +7,7 @@
     "client": "National Museums Scotland",
     "gallery": [
       "./images/nms-logo-bg.png",
-      "./images/nms-mock-2.png",
+      "./images/nms-mock.png",
       "./images/nms-ticket.png"
     ],
     "services": ["UI/UX", "Front-end", "Back-end"],

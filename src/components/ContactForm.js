@@ -11,11 +11,16 @@ const ContactForm = () => {
   const [description, setDescription] = useState("");
 
   return (
-    <form tw="w-full font-body" onSubmit={() => console.log("submit")}>
+    <form
+      tw="w-full font-body"
+      onSubmit={() => console.log("submit")}
+      data-netlify="true"
+    >
       <div tw="mb-5">
         <Label htmlFor="name" text="Name">
           <Input
             id="name"
+            name="name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -27,6 +32,7 @@ const ContactForm = () => {
           <Input
             type="email"
             id="email"
+            name="name"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -38,6 +44,7 @@ const ContactForm = () => {
             tw="h-40"
             as="textarea"
             id="description"
+            name="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
