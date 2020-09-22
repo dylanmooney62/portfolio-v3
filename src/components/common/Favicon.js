@@ -3,15 +3,23 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 const Favicon = () => {
+  const [icon, setIcon] = useState("");
+
+  useEffect(() => {
+    // hide window on gatsby build
+
+    if (typeof window !== undefined) {
+      window.matchMedia("(prefers-color-scheme:dark)").matches
+        ? setIcon("dark")
+        : setIcon("light");
+    }
+  }, [icon]);
+
   return (
     <Helmet>
       <link
         rel="shortcut icon"
-        href={
-          window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? `/logo-dark.png`
-            : "/logo-light.png"
-        }
+        href={`/logo-${icon}.png`}
         type="image/x-icon"
       />
     </Helmet>
