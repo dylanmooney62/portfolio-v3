@@ -12,10 +12,23 @@ const ProjectLinks = ({ site, github, ...props }) => {
         View
       </Title>
       <div tw="flex">
-        <Button variant="primary" small href={site} tw="mr-4">
+        <Button
+          variant="primary"
+          small
+          href={site}
+          tw="mr-4"
+          target="_blank"
+          rel="noopener"
+        >
           Live Site
         </Button>
-        <Button variant="secondary" small href={github}>
+        <Button
+          variant="secondary"
+          small
+          href={github}
+          target="_blank"
+          rel="noopener"
+        >
           Source Code
         </Button>
       </div>
