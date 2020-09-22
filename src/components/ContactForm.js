@@ -10,12 +10,24 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (name === "") {
+      return;
+    }
+
+    if (email === "") {
+    }
+
+    if (description === "") {
+    }
+
+    e.submit();
+  };
+
   return (
-    <form
-      tw="w-full font-body"
-      onSubmit={() => console.log("submit")}
-      data-netlify="true"
-    >
+    <form tw="w-full font-body" onSubmit={handleSubmit} data-netlify="true">
       <div tw="mb-5">
         <Label htmlFor="name" text="Name">
           <Input
