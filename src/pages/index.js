@@ -1,6 +1,5 @@
 import React from "react";
 import "twin.macro";
-import { Helmet } from "react-helmet";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
