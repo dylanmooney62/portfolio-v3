@@ -20,8 +20,9 @@ export const query = graphql`
       title
       slug
       client
+      services
       caseStudy {
-        challenge
+        brief
         solution
         features
       }
@@ -29,6 +30,7 @@ export const query = graphql`
         site
         github
       }
+      technologies
       gallery {
         childImageSharp {
           fluid {
@@ -59,17 +61,9 @@ export const query = graphql`
   }
 `;
 
-const client = {
-  name: "Connecting Scotland",
-  services: ["UI/UX", "Front-end"],
-  site: "http://www.connectingscotland.org",
-};
-
-const technologies = ["react", "wordpress", "html", "javascript"];
-
 const Project = ({ data }) => {
   const project = data.projectsJson;
-  const otherProjects = data.allProjectsJson.edges;
+  // const otherProjects = data.allProjectsJson.edges;
 
   return (
     <Layout>
@@ -79,16 +73,17 @@ const Project = ({ data }) => {
         <ProjectGallery images={project.gallery} />
         <Container
           as="section"
-          tw="py-10 md:py-20 lg:py-32 xl:flex xl:justify-between xl:flex-row-reverse"
+          tw="py-10 md:py-16 lg:py-24 xl:flex xl:justify-between"
         >
-          <ProjectCaseStudy tw="mb-8" caseStudy={project.caseStudy} />
-          <div>
-            <Divider aria-hidden="true" tw="hidden h-full xl:block" />
-          </div>
-          <div tw="xl:pt-2">
-            <ProjectClient client={client} tw="mb-8 xl:mb-12" />
+          <div tw="xl:pt-2 mb-8">
+            <ProjectClient
+              client={project.client}
+              services={project.services}
+              url={project.links.site}
+              tw="mb-8 xl:mb-12"
+            />
             <ProjectTechnology
-              technologies={technologies}
+              technologies={project.technologies}
               tw="mb-10 xl:mb-12"
             />
             <ProjectLinks
@@ -97,6 +92,7 @@ const Project = ({ data }) => {
               tw="mb-10 xl:mb-12"
             />
           </div>
+          <ProjectCaseStudy tw="mb-8" caseStudy={project.caseStudy} />
         </Container>
       </div>
     </Layout>

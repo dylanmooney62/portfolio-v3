@@ -9,19 +9,19 @@ import IconButton from "./common/IconButton";
 
 const LINKS = [
   {
-    href: "https://www.linkedin.com",
+    href: "https://www.linkedin.com/in/dylan-mooney-4a7b401b7/",
     icon: faLinkedin,
     label: "LinkedIn",
     brandColor: "#0077B5",
   },
   {
-    href: "https://www.github.com",
+    href: "https://github.com/dylanmooney62",
     icon: faGithub,
     label: "Github",
     brandColor: "#333333",
   },
   {
-    href: "https://www.codepen.com",
+    href: "https://codepen.io/dylanmooney62",
     icon: faCodepen,
     label: "Codepen",
     brandColor: "#333333",

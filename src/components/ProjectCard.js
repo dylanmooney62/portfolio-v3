@@ -10,7 +10,7 @@ const ProjectCard = ({ title, slug, thumbnail, logo, services }) => {
   return (
     <StyledProjectCard
       tw="block focus:shadow-outline focus:outline-none rounded-lg"
-      to={`/projects/${slug}`}
+      to={`/${slug}`}
     >
       <h3 tw="hidden">{title}</h3>
       <div tw="relative h-64 bg-purple-500 mb-8 rounded-lg overflow-hidden shadow-lg">

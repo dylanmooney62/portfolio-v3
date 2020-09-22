@@ -1,7 +1,7 @@
 import tw, { styled } from "twin.macro";
 
 const Caption = styled.div`
-  ${tw`font-display font-medium text-sm text-gray-800 relative inline-block md:text-base lg:text-lg`}
+  ${tw`font-display font-bold text-sm text-gray-800 relative inline-block md:text-base lg:text-lg`}
 
   &::after {
     content: "";

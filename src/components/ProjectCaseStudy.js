@@ -9,16 +9,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCaseStudy = ({
-  caseStudy: { challenge, solution, features },
+  caseStudy: { brief, solution, features },
   ...props
 }) => {
   return (
     <div tw="lg:max-w-2xl xl:max-w-3xl" {...props}>
       <div tw="mb-10 ">
         <Title variant="h3" as="h2" tw="mb-4">
-          Overview
+          Brief
         </Title>
-        {challenge.split(/\n/).map((text, index) => (
+        {brief.split(/\n/).map((text, index) => (
           <Paragraph key={index} tw="leading-loose mb-4">
             {text}
           </Paragraph>
@@ -52,7 +52,7 @@ const ProjectCaseStudy = ({
 };
 
 ProjectCaseStudy.propTypes = {
-  caseStudy: PropTypes.string.isRequired,
+  caseStudy: PropTypes.object.isRequired,
 };
 
 export default ProjectCaseStudy;

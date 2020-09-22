@@ -4,7 +4,7 @@ const DefinitionList = styled.dl`
   ${tw`text-sm md:text-base`}
 
   div {
-    ${tw`flex mb-2`}
+    ${tw`flex mb-3 last:mb-0`}
   }
 
   dt {

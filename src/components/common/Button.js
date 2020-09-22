@@ -1,5 +1,5 @@
 import propTypes from "prop-types";
-import tw, { styled, css } from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 const Button = styled.a`
   ${tw`

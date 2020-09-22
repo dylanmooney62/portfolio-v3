@@ -5,8 +5,6 @@ import "twin.macro";
 import Title from "./common/Title";
 
 const ProjectTechnology = ({ technologies, ...props }) => {
-  console.log(technologies);
-
   return (
     <div {...props}>
       <Title variant="h3" as="h3" tw="mb-4 xl:text-2xl xl:mb-4">
@@ -16,7 +14,7 @@ const ProjectTechnology = ({ technologies, ...props }) => {
         {technologies.map((tech) => (
           <li
             key={tech}
-            tw="text-xs uppercase text-gray-700 bg-gray-300 font-semibold py-2 px-4 not-last:mr-4 mt-4 rounded-sm"
+            tw="text-xs font-bold uppercase text-gray-700 bg-gray-300 font-semibold py-2 px-4 not-last:mr-4 mt-4 rounded-sm"
           >
             {tech}
           </li>

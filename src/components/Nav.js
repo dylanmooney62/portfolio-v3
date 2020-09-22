@@ -49,7 +49,7 @@ const Nav = ({ inverted }) => {
               )}
               <span tw="hidden">Open Navigation</span>
             </button>
-            <ul tw="flex" style={{ transform: "translateY(4px)" }}>
+            <ul tw="flex">
               {NAV_ITEMS.map(({ text, href }) => (
                 <NavItem text={text} href={href} key={href} />
               ))}

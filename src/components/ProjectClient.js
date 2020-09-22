@@ -5,7 +5,7 @@ import Title from "./common/Title";
 import ButtonLink from "./common/ButtonLink";
 import DefinitionList from "./common/DefinitionList";
 
-const ProjectClient = ({ client, ...props }) => {
+const ProjectClient = ({ client, services, url, ...props }) => {
   return (
     <div {...props}>
       <Title variant="h3" as="h3" tw="mb-4 xl:text-2xl xl:mb-2">
@@ -14,17 +14,17 @@ const ProjectClient = ({ client, ...props }) => {
       <DefinitionList>
         <div>
           <dt>Name:</dt>
-          <dd>{client.name}</dd>
+          <dd>{client}</dd>
         </div>
         <div>
           <dt>Services:</dt>
-          <dd>{client.services.join(", ")}</dd>
+          <dd>{services.join(",  ")}</dd>
         </div>
         <div>
           <dt>Website:</dt>
           <dd>
-            <ButtonLink href={client.site} target="_blank" rel="noopener">
-              {client.site}
+            <ButtonLink href={url} target="_blank" rel="noopener">
+              {url}
             </ButtonLink>
           </dd>
         </div>
