@@ -9,8 +9,13 @@ import ProjectsSection from "../components/ProjectsSection";
 import Container from "../components/common/Container";
 import ContactSection from "../components/ContactSection";
 
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]');
+}
+
 const IndexPage = () => (
-  <Layout>
+  <Layout className="home">
     <SEO title="Dylan Mooney - Web Solutions" />
     <Hero />
     <Container tw="relative z-10 -mt-12">

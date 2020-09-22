@@ -6,7 +6,7 @@ import Title from "./common/Title";
 import Container from "./common/Container";
 import Button from "./common/Button";
 
-import heroImg from "../assets/images/hero.png";
+import heroImg from "../assets/images/hero.jpg";
 
 const Hero = () => {
   return (

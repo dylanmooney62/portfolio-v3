@@ -5,9 +5,9 @@ import tw, { styled } from "twin.macro";
 import Footer from "./Footer";
 import Favicon from "./common/Favicon";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, ...props }) => {
   return (
-    <StyledLayout>
+    <StyledLayout {...props}>
       <Favicon />
       {children}
       <Footer />
