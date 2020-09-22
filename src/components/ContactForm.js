@@ -27,7 +27,12 @@ const ContactForm = () => {
   };
 
   return (
-    <form tw="w-full font-body" onSubmit={handleSubmit} data-netlify="true">
+    <form
+      tw="w-full font-body"
+      onSubmit={handleSubmit}
+      method="POST"
+      data-netlify="true"
+    >
       <div tw="mb-5">
         <Label htmlFor="name" text="Name">
           <Input
