@@ -17,7 +17,6 @@ const ContactForm = () => {
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="contact"
-      action="#"
     >
       <input type="hidden" name="bot-field" />
       <div tw="mb-5">
@@ -29,6 +28,7 @@ const ContactForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            autocomplete="name"
           />
         </Label>
       </div>
@@ -41,6 +41,7 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            autocomplete="email"
           />
         </Label>
       </div>
