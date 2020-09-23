@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import "twin.macro";
+import axios from "axios";
+import { styled } from "twin.macro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import Button from "./common/Button";
 import Input from "./common/Input";
@@ -9,16 +14,48 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
+  const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !description) {
+      return toast.error("Something went wrong - Please try again");
+    }
+
+    setIsSending(true);
+
+    try {
+      await axios({
+        method: "post",
+        url: "https://getform.io/f/38b2d39b-1a99-4fd5-a03a-6fdf87ad1c0e",
+        data: new FormData(e.target),
+      });
+
+      handleResponse(
+        true,
+        "Email Successful - Thank you for getting in touch."
+      );
+    } catch (res) {
+      handleResponse(false, "Something went wrong - Please try again later.");
+    }
+  };
+
+  const handleResponse = (success, msg) => {
+    setIsSending(false);
+
+    if (!success) {
+      return toast.error(msg);
+    }
+
+    setName("");
+    setEmail("");
+    setDescription("");
+    toast.success(msg);
+  };
 
   return (
-    <form
-      tw="w-full font-body"
-      method="POST"
-      netlify-honeypot="bot-field"
-      data-netlify="true"
-      name="contact"
-    >
-      <input type="hidden" name="bot-field" />
+    <form tw="w-full font-body" onSubmit={handleSubmit}>
       <div tw="mb-5">
         <Label htmlFor="name" text="Name">
           <Input
@@ -37,7 +74,7 @@ const ContactForm = () => {
           <Input
             type="email"
             id="email"
-            name="name"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -58,11 +95,31 @@ const ContactForm = () => {
           />
         </Label>
       </div>
-      <Button as="button" type="submit" variant="primary">
-        Send Message
-      </Button>
+      <SendButton
+        as="button"
+        type="submit"
+        variant="primary"
+        disabled={isSending}
+      >
+        {!isSending ? (
+          "Send Message"
+        ) : (
+          <FontAwesomeIcon icon={faSpinner} spin tw="mx-auto" />
+        )}
+      </SendButton>
     </form>
   );
 };
+
+const SendButton = styled(Button)`
+  text-align: center;
+  min-width: 156px;
+  min-height: 42px;
+
+  @media (min-width: 768px) {
+    min-width: 184px;
+    min-height: 53px;
+  }
+`;
 
 export default ContactForm;

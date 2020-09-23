@@ -4,11 +4,13 @@ import tw, { styled } from "twin.macro";
 
 import Footer from "./Footer";
 import Favicon from "./common/Favicon";
+import Notification from "./common/Notification";
 
 const Layout = ({ children, ...props }) => {
   return (
     <StyledLayout {...props}>
       <Favicon />
+      <Notification />
       {children}
       <Footer />
     </StyledLayout>

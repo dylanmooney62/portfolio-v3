@@ -19,7 +19,11 @@ const Button = styled.a`
   /* Small Variant */
   ${(props) => props.small && tw`py-3 px-8 md:py-3 md:px-10`}
 
-    
+  
+    &:disabled { 
+        cursor: not-allowed;
+        ${tw`bg-gray-600`}   
+    }
 `;
 
 Button.propTypes = {
