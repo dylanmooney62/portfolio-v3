@@ -10,31 +10,16 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (name === "") {
-      return;
-    }
-
-    if (email === "") {
-      return;
-    }
-
-    if (description === "") {
-      return;
-    }
-
-    e.submit();
-  };
-
   return (
     <form
       tw="w-full font-body"
-      onSubmit={handleSubmit}
       method="POST"
+      netlify-honeypot="bot-field"
       data-netlify="true"
+      name="contact"
+      action="#"
     >
+      <input type="hidden" name="bot-field" />
       <div tw="mb-5">
         <Label htmlFor="name" text="Name">
           <Input
@@ -43,6 +28,7 @@ const ContactForm = () => {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </Label>
       </div>
@@ -54,6 +40,7 @@ const ContactForm = () => {
             name="name"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </Label>
       </div>
@@ -66,6 +53,7 @@ const ContactForm = () => {
             name="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            required
           />
         </Label>
       </div>
