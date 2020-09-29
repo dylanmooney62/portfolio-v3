@@ -10,7 +10,7 @@ const Caption = styled.div`
     left: 0;
     width: 200%;
     height: 0.1rem;
-    background: linear-gradient(to right, rgb(44, 82, 130), #ffffff);
+    background: linear-gradient(to right, rgb(128, 90, 213), #ffffff);
     ${tw`rounded-sm`}
   }
 `;

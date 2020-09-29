@@ -41,7 +41,7 @@ const ProjectCaseStudy = ({
         <ul tw="text-gray-800 text-base">
           {features.map((text, index) => (
             <li tw="mb-3" key={index}>
-              <FontAwesomeIcon tw="mr-4 text-blue-800" icon={faCheck} />
+              <FontAwesomeIcon tw="mr-4 text-purple-600" icon={faCheck} />
               {text}
             </li>
           ))}

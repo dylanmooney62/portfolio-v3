@@ -6,9 +6,8 @@ import Title from "./common/Title";
 import Container from "./common/Container";
 import Button from "./common/Button";
 
-import heroImg from "../assets/images/hero-2.png";
 import Wave from "../assets/svg/wave.svg";
-import Laptop from "../assets/svg/laptop.svg";
+import LaptopImg from "../assets/images/laptop.svg";
 
 const Hero = () => {
   return (
@@ -34,7 +33,8 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <Laptop
+        <img
+          src={LaptopImg}
           className="laptop"
           tw="hidden lg:block absolute bottom-0 right-0 h-auto z-10"
         />
