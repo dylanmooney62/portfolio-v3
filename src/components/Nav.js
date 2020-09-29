@@ -14,7 +14,7 @@ const NAV_ITEMS = [
 ];
 
 const NavItem = ({ text, href }) => (
-  <li tw="text-white font-semibold text-sm mr-10 sm:mr-12 md:text-base md:mr-20 xl:mr-24 last:mr-0 hover:text-gray-400 transition duration-300 ease-in-out">
+  <li tw="text-white font-semibold text-sm mr-4 sm:mr-12 md:text-base md:mr-20 xl:mr-24 last:mr-0 hover:text-gray-400 transition duration-300 ease-in-out z-20">
     <Link tw="p-1 focus:shadow-outline focus:outline-none" to={href}>
       {text}
     </Link>

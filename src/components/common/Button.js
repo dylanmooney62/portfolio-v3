@@ -9,15 +9,19 @@ const Button = styled.a`
   `}
 
   /* Primary Styles */
-  ${(props) => props.variant === "primary" && tw`bg-blue-800 hover:bg-blue-900`}
+  ${(props) =>
+    props.variant === "primary" && tw`bg-purple-600 hover:bg-purple-700`}
 
   /* Secondary Styles */
   ${(props) =>
-    props.variant === "secondary" && tw`bg-green-700 hover:bg-green-800`}
+    props.variant === "secondary" && tw`bg-orange-400 hover:bg-orange-500`}
 
 
   /* Small Variant */
   ${(props) => props.small && tw`py-3 px-8 md:py-3 md:px-10`}
+
+   /* Large Variant */
+
 
   
     &:disabled { 
