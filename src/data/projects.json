@@ -10,7 +10,7 @@
       "./images/nms-mock.png",
       "./images/nms-ticket.png"
     ],
-    "services": ["UI/UX", "Front-end", "Back-end"],
+    "services": ["Full Stack Development"],
     "technologies": [
       "React",
       "Styled Components",
