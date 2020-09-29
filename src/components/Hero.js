@@ -17,8 +17,11 @@ const Hero = () => {
     >
       <Nav />
       <Container tw="xl:flex flex-col justify-center h-full relative">
-        <div tw="text-center py-32 sm:py-40 md:py-56 lg:text-left xl:p-0 xl:-mt-12">
-          <Title tw="mb-3" variant="h1">
+        <div
+          className="hero-text"
+          tw="text-center py-32 sm:py-40 md:py-56 lg:text-left xl:p-0 xl:-mt-12"
+        >
+          <Title variant="h1" className="hero-title" tw="mb-3">
             Results Driven <br tw="hidden lg:block" /> Websites
           </Title>
           <p
@@ -57,6 +60,21 @@ const StyledHeader = styled.header`
     width: 100%;
     bottom: 0;
     left: 0;
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .hero-text {
+    animation: fadeInLeft 1s;
   }
 
   .laptop {
