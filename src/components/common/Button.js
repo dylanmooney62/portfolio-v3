@@ -5,8 +5,10 @@ const Button = styled.a`
   ${tw`
   text-xs font-semibold py-3 px-10 font-body rounded-lg text-white relative inline-block z-10 shadow-md\
   md:text-sm md:py-4 md:px-12 cursor-pointer focus:shadow-outline focus:outline-none\
-  inline-flex items-center transition duration-200 ease-in-out
+  inline-flex items-center
   `}
+
+  transition: all .3s ease-in-out;
 
   /* Primary Styles */
   ${(props) =>
@@ -14,7 +16,8 @@ const Button = styled.a`
 
   /* Secondary Styles */
   ${(props) =>
-    props.variant === "secondary" && tw`bg-orange-400 hover:bg-orange-500`}
+    props.variant === "secondary" &&
+    tw`bg-saffron-orange hover:bg-saffron-orange-dark`}
 
 
   /* Small Variant */

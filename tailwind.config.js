@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         "saffron-orange": "#ff8a00",
+        "saffron-orange-dark": "#ee8100",
         "flame-red": "#FF0610",
         "tufts-blue": "#009AED",
         "sky-blue": "#00CCEB",
