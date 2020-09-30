@@ -83,7 +83,7 @@ const ContactForm = () => {
         </Label>
       </div>
       <div tw="mb-8">
-        <Label htmlFor="description" text="Project Description">
+        <Label htmlFor="description" text="Message">
           <Input
             tw="h-40"
             as="textarea"
