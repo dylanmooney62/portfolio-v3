@@ -16,7 +16,10 @@ if (typeof window !== "undefined") {
 
 const IndexPage = () => (
   <Layout className="home">
-    <SEO title="Dylan Mooney - Web Solutions" />
+    <SEO
+      title="Dylan Mooney - Web Solutions"
+      description="Results Driven Websites. Expert front-end web development services based in Glasgow, Scotland."
+    />
     <Hero />
     <Container tw="relative z-10 -mt-12">
       <AboutPanel />
