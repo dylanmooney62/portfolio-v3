@@ -4,6 +4,7 @@ import {
   faGithub,
   faLinkedin,
   faCodepen,
+  faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
 import IconButton from "./common/IconButton";
 
@@ -19,6 +20,12 @@ const LINKS = [
     icon: faGithub,
     label: "Github",
     brandColor: "#333333",
+  },
+  {
+    href: "https://dylanmooney62.medium.com",
+    icon: faMediumM,
+    label: "Medium",
+    brandColor: "#00AB6C",
   },
   {
     href: "https://codepen.io/dylanmooney62",
