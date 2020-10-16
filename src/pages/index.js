@@ -18,7 +18,7 @@ const IndexPage = () => (
   <Layout className="home">
     <SEO
       title="Dylan Mooney - Web Solutions"
-      description="Results Driven Websites. Expert front-end web development services based in Glasgow, Scotland."
+      description="Results Driven Websites. Expert web development services based in Glasgow, Scotland."
     />
     <Hero />
     <Container tw="relative z-10 -mt-12">

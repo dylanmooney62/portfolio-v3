@@ -28,7 +28,7 @@ const Hero = () => {
             tw="mx-auto text-xs leading-loose text-white font-body font-normal block max-w-2/3 mb-6 md:text-sm md:mb-8 lg:mr-auto lg:ml-0 lg:text-base"
             style={{ opacity: 0.95 }}
           >
-            Expert front-end web development services based in Glasgow, Scotland
+            Expert web development services based in Glasgow, Scotland
           </p>
           <div>
             <Button href="#projects" variant="secondary" large>
