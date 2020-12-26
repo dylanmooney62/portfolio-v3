@@ -67,8 +67,8 @@ const Project = ({ data }) => {
   return (
     <Layout>
       <SEO title={`${project.title} | Dylan Mooney - Web Solutions`} />
-      <div tw="bg-gray-100">
-        <Nav inverted />
+      <div>
+        <Nav />
         <Header title={project.title} caption="Project" />
         <ProjectGallery images={project.gallery} />
         <Container

@@ -34,6 +34,7 @@ const StyledTitle = styled(Title)`
     tw`\
     text-3xl font-semibold
     md:text-4xl
+
   `}
 
 ${(props) =>
