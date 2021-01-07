@@ -23,14 +23,14 @@ export default Notification;
 
 const StyledNotification = styled(ToastContainer)`
   .Toastify__toast {
-    ${tw`rounded-sm py-2 px-3`}
+    ${tw`rounded-md py-2 px-3`}
   }
 
   .Toastify__toast--success {
-    ${tw`bg-green-700`}
+    ${tw`bg-green-600`}
   }
 
   .Toastify__toast--error {
-    ${tw`bg-red-700`}
+    ${tw`bg-red-600`}
   }
 `;

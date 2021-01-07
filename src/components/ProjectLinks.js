@@ -1,6 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "twin.macro";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faExternalLinkAlt,
+  faCode,
+  faEyeSlash,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Title from "./common/Title";
 import Button from "./common/Button";
@@ -21,16 +27,25 @@ const ProjectLinks = ({ site, github, ...props }) => {
           rel="noopener"
         >
           Live Site
+          <FontAwesomeIcon icon={faExternalLinkAlt} />
         </Button>
-        <Button
-          variant="secondary"
-          small
-          href={github}
-          target="_blank"
-          rel="noopener"
-        >
-          Source Code
-        </Button>
+        {github ? (
+          <Button
+            variant="secondary"
+            small
+            href={github}
+            target="_blank"
+            rel="noopener"
+          >
+            Source Code
+            <FontAwesomeIcon icon={faCode} />
+          </Button>
+        ) : (
+          <Button variant="locked" small target="_blank">
+            Source Code
+            <FontAwesomeIcon icon={faEyeSlash} />
+          </Button>
+        )}
       </div>
     </div>
   );

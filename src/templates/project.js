@@ -70,7 +70,7 @@ const Project = ({ data }) => {
       <div>
         <Nav />
         <Header title={project.title} caption="Project" />
-        <ProjectGallery images={project.gallery} />
+        {project.gallery && <ProjectGallery images={project.gallery} />}
         <Container
           as="section"
           tw="py-10 md:py-16 lg:py-24 xl:flex xl:justify-between"

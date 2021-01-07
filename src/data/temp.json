@@ -1,0 +1,26 @@
+{
+  "title": "Connecting Scotland",
+  "slug": "connecting-scotland",
+  "thumbnail": "./images/cs-thumbnail.png",
+  "logo": "./images/cs-logo.svg",
+  "client": "Connecting Scotland",
+  "transition": [],
+  "services": ["WordPress Development"],
+  "technologies": ["WordPress", "PHP", "ACF", "SASS", "JS"],
+  "links": {
+    "site": "http://www.connectingscotland.org",
+    "github": ""
+  },
+  "caseStudy": {
+    "brief": "This brief was a college project as the final graded unit. Ultimately the goal of this brief was to showcase what I had learned throughout my college experience.\n National Museums Scotland is an organisation that cares for the collections of national and international importance—preserving them, interpreting them, and making them accessible to as many people as possible.\nNational Museums Scotland were looking for a solution that engaged communities and wanted features that would help communities organise and arrange events.",
+    "solution": "For the National Museums of Scotland, I produced a modern, responsive website with a crucial focus on rich imagery to engage customers and showcase the museums featured events.\n A search and filter system was created, which allowed curious users to search the numerous events the National Museum of Scotland and refine their search until they found a suitable event.\n A booking system was built to allow the National Museum of Scotland to sell tickets to patrons. This system was split into easy to digest linear stages, which enabled a seamless booking and helped users feel less overwhelmed. Payment processing was made simple for customers by utilising the Stripe API on the back-end to handle payments.\n The final step of the user experience was sending customers their unique ticket generated as a PDF directly to their email for them to print off for their visit to the museum.",
+    "features": [
+      "Site Redesign",
+      "Responsive Design",
+      "Bespoke WordPress Development",
+      "SEO Optimization",
+      "User friendly updating",
+      "SSL Certificate"
+    ]
+  }
+}

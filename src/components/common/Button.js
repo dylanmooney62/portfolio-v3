@@ -23,18 +23,30 @@ const Button = styled.a`
   /* Small Variant */
   ${(props) => props.small && tw`py-3 px-8 md:py-3 md:px-10`}
 
-   /* Large Variant */
+  /* Large Variant */
 
+
+
+  /* Locked */
+  ${(props) =>
+    props.variant === "locked" &&
+    tw`bg-gray-300 shadow-none text-gray-600 cursor-not-allowed`}
 
   
     &:disabled { 
         cursor: not-allowed;
         ${tw`bg-gray-600`}   
     }
+
+  
+  /* Icons */
+  svg {
+      ${tw`ml-2`}
+    }
 `;
 
 Button.propTypes = {
-  variant: propTypes.oneOf(["primary", "secondary"]),
+  variant: propTypes.oneOf(["primary", "secondary", "locked"]),
   children: propTypes.node,
 };
 

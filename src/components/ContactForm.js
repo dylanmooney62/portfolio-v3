@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { styled } from "twin.macro";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (!name || !email || !description) {
-      return toast.error("Something went wrong - Please try again");
+      return toast.error("Please enter all form fields correctly.");
     }
 
     setIsSending(true);
@@ -102,9 +102,17 @@ const ContactForm = () => {
         disabled={isSending}
       >
         {!isSending ? (
-          "Send Message"
+          <>
+            Send Message
+            <FontAwesomeIcon icon={faPaperPlane} tw="mx-auto" />
+          </>
         ) : (
-          <FontAwesomeIcon icon={faSpinner} spin tw="mx-auto" />
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            tw="mx-auto"
+            className="spinner"
+          />
         )}
       </SendButton>
     </form>
@@ -119,6 +127,10 @@ const SendButton = styled(Button)`
   @media (min-width: 768px) {
     min-width: 184px;
     min-height: 53px;
+  }
+
+  .spinner {
+    margin: auto !important;
   }
 `;
 

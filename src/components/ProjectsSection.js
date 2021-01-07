@@ -40,7 +40,7 @@ const ProjectsSection = () => {
         <Title tw="mb-3" variant="h2">
           Recent Projects
         </Title>
-        <Paragraph>Projects I've had the pleasure working on</Paragraph>
+        <Paragraph>Projects I've had the pleasure of working on</Paragraph>
       </div>
       <ProjectCardList projects={projects} />
     </Container>
