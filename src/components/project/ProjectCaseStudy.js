@@ -2,8 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import "twin.macro";
 
-import Title from "./common/Title";
-import Paragraph from "./common/Paragraph";
+import Title from "../common/Title";
+import Paragraph from "../common/Paragraph";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";

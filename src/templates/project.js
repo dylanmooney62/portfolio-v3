@@ -7,11 +7,12 @@ import SEO from "../components/SEO";
 import Nav from "../components/Nav";
 import Header from "../components/Header";
 import Container from "../components/common/Container";
-import ProjectGallery from "../components/ProjectGallery";
-import ProjectCaseStudy from "../components/ProjectCaseStudy";
-import ProjectClient from "../components/ProjectClient";
-import ProjectTechnology from "../components/ProjectTechnology";
-import ProjectLinks from "../components/ProjectLinks";
+import ProjectGallery from "../components/project/ProjectGallery";
+import ImageComparison from "../components/project/ImageComparison";
+import ProjectCaseStudy from "../components/project/ProjectCaseStudy";
+import ProjectClient from "../components/project/ProjectClient";
+import ProjectTechnology from "../components/project/ProjectTechnology";
+import ProjectLinks from "../components/project/ProjectLinks";
 
 export const query = graphql`
   query($slug: String!) {
@@ -34,6 +35,22 @@ export const query = graphql`
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      comparison {
+        left {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        right {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
@@ -70,7 +87,13 @@ const Project = ({ data }) => {
       <div>
         <Nav />
         <Header title={project.title} caption="Project" />
-        {project.gallery && <ProjectGallery images={project.gallery} />}
+        {project?.gallery && <ProjectGallery images={project.gallery} />}
+        {project?.comparison && (
+          <ImageComparison
+            left={project.comparison.left}
+            right={project.comparison.right}
+          />
+        )}
         <Container
           as="section"
           tw="py-10 md:py-16 lg:py-24 xl:flex xl:justify-between"

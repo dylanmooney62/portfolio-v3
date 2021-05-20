@@ -1,5 +1,33 @@
 [
   {
+    "title": "Connecting Scotland",
+    "slug": "connecting-scotland",
+    "thumbnail": "./images/cs-thumbnail.png",
+    "logo": "./images/cs-logo.svg",
+    "client": "Connecting Scotland",
+    "transition": [],
+    "services": ["WordPress"],
+    "technologies": ["WordPress", "ACF", "PHP", "SASS", "JS"],
+    "links": {
+      "site": "http://www.connectingscotland.org",
+      "github": ""
+    },
+    "comparison": {
+      "left": "./images/cs-after-v2.png",
+      "right": "./images/cs-before-v2.png"
+    },
+    "caseStudy": {
+      "brief": "Connecting Scotland is a Community Interest Company that supports a growing network of trained practitioners that organise and delivers training practices in participatory leadership, hosting, and harvesting conversations.\n Connecting Scotland required a redesign and expansion to their preexisting site, allowing them to showcase events and previous work with clients. \n",
+      "solution": "For the design, I utilised a simple theme as the foundation and began developing the bespoke features request on top of this foundation. \n I discovered from further discussions that the editors had trouble editing or adding any content to the site due to previous plugins installed. \n To solve this matter, I implemented advanced custom forms and designed inputs for every component on their site - giving editors freedom to add and update the site without programming experience. \n Custom blog post types were created, allowing Connecting Scotland to showcase their previous and work and upcoming events that they will host in the future.",
+      "features": [
+        "Bespoke WordPress Development",
+        "Site Redesign",
+        "Responsive",
+        "SEO Optimisation"
+      ]
+    }
+  },
+  {
     "title": "National Museum of Scotland",
     "slug": "national-museum-of-scotland",
     "thumbnail": "./images/nms-thumbnail.png",

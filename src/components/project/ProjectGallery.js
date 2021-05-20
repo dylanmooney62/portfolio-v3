@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import tw, { styled } from "twin.macro";
 import Img from "gatsby-image";
 
-import Carousel from "./common/Carousel";
-import Container from "./common/Container";
+import Carousel from "../common/Carousel";
+import Container from "../common/Container";
 
 const ProjectGallery = ({ images }) => {
   return (

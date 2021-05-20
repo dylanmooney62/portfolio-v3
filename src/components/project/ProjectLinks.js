@@ -8,8 +8,8 @@ import {
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Title from "./common/Title";
-import Button from "./common/Button";
+import Title from "../common/Title";
+import Button from "../common/Button";
 
 const ProjectLinks = ({ site, github, ...props }) => {
   return (

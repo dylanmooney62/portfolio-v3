@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import AboutPanel from "../components/AboutPanel";
-import ProjectsSection from "../components/ProjectsSection";
+import ProjectsSection from "../components/project/ProjectsSection";
 import Container from "../components/common/Container";
 import ContactSection from "../components/ContactSection";
 

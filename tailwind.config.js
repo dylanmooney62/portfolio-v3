@@ -14,6 +14,7 @@ module.exports = {
         "flame-red": "#FF0610",
         "tufts-blue": "#009AED",
         "sky-blue": "#00CCEB",
+        "amazon-green": "#00b894",
       },
       height: {
         "screen-90": "90vh",

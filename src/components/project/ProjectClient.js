@@ -1,9 +1,9 @@
 import React from "react";
 import "twin.macro";
 
-import Title from "./common/Title";
-import ButtonLink from "./common/ButtonLink";
-import DefinitionList from "./common/DefinitionList";
+import Title from "../common/Title";
+import ButtonLink from "../common/ButtonLink";
+import DefinitionList from "../common/DefinitionList";
 
 const ProjectClient = ({ client, services, url, ...props }) => {
   return (

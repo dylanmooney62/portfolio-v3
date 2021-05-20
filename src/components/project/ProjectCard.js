@@ -4,7 +4,7 @@ import tw, { styled } from "twin.macro";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
 
-import Paragraph from "./common/Paragraph";
+import Paragraph from "../common/Paragraph";
 
 const ProjectCard = ({ title, slug, thumbnail, logo, services }) => {
   return (

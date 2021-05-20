@@ -2,9 +2,9 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import "twin.macro";
 
-import Title from "./common/Title";
-import Paragraph from "./common/Paragraph";
-import Container from "./common/Container";
+import Title from "../common/Title";
+import Paragraph from "../common/Paragraph";
+import Container from "../common/Container";
 import ProjectCardList from "./ProjectCardList";
 
 const ProjectsSection = () => {
